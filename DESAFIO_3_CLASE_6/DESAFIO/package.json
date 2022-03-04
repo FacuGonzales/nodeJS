@@ -1,0 +1,16 @@
+{
+  "name": "desafio-3",
+  "version": "1.0.0",
+  "description": "Desafio 3 - Servidores Web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Facundo Gonzales Liendo",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "random": "^3.0.6"
+  }
+}
