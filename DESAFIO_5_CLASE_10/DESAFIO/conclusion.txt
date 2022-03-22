@@ -1,0 +1,8 @@
+
+###  CONCLUSIÓN
+
+Como lo solicita en el punto numero 4 del desafio: 
+     Por escrito, indicar cuál de los tres motores de plantillas prefieres para tu proyecto y por qué.
+
+Como conclusión final, en mi caso, prefiero mas trabajar con los templates .PUG o con los .EJS, ya que me senti mas familiarizado y mas comodo
+al trabajar con su sintaxis, no así en .HBS, me costo un poco mas entender su funcionamiento.
