@@ -1,7 +1,7 @@
 const COLORS = require('colors');
 const APP = require('./app');
 
-const PORT = 8081;
+const PORT = 8080;
 
 const _server = APP.listen(PORT, () => console.log(`SERVIDOR CORRIENDO EN EL PUERTO ${_server.address().port}`.green));
 
