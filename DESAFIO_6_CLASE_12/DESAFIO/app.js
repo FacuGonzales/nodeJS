@@ -13,6 +13,8 @@ const io = new Server(HTTPServer);
 
 const ProductRoutes = require('./routes/productos');
 
+
+// app.set("view engine", "ejs")
 app.engine("hbs",
 engine({
         extname: ".hbs",
@@ -60,32 +62,24 @@ app.get('/',(req,res)=>{
 //     })
 // })
 
-io.on("connection", (socket) => {
+io.on("connection", (socket)=>{
+  console.log("user connected. ID:",socket.id)
+  socket.emit("message", "connected to websocket")
+  products.index()
+  .then(response =>{
+      socket.emit("products", response)
+  })
+  socket.emit("chat", messages)
 
-    console.log(`Conexión establecida - usuario: ${socket.id}`);
-    socket.on("disconnect", () => {
-      console.log(`Usuario ${socket.id} desconectado`);
-    });
+  socket.on("sendMessage", data =>{
+      messages.push(data)
+      io.sockets.emit("newMessage",data)
+  })
   
-    //--> envio al cliente
-    socket.emit("mensajes", mensajes);
-    socket.emit("productos", articulos);
-    //<--
-  
-    //--> recibo del cliente
-    socket.on("producto", async (data) => {
-      articulos.push(data);
-      await fs.promises.writeFile('./public/txt/productos.txt', JSON.stringify(articulos))
-      io.sockets.emit("productos", articulos);
-    });
-    socket.on("mensaje", async (data) => {
-      mensajes.push({ email: data.email, fyh: data.fyh, mensaje: data.msj });
-      await fs.promises.writeFile('./public/txt/mensajes.txt', JSON.stringify(mensajes))
-      io.sockets.emit("mensajes", mensajes);
-    });
-    //<--
-  
-  });
+  socket.on("receivedMessage", data =>{
+      console.log(data)
+  })
+})
 
 
 module.exports = app;
