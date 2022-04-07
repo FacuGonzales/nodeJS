@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "timestamp": "04/01/2023",
+    "name": "Cafe Cabrales",
+    "description": "BOLSA DE CAFE MARCA CABRALES 150GR",
+    "price": 295,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/large_460x460/2030009_l.jpg",
+    "code": "10200",
+    "stock": "600"
+  },
+  {
+    "id": 2,
+    "timestamp": "03/08/2022",
+    "name": "9 DE ORO",
+    "description": "GALLETITAS SALADAS MARCA 9 DE ORO",
+    "price": 45,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/large_460x460/2142156_l.jpg",
+    "code": "7990",
+    "stock": "3500"
+  },
+  {
+    "id": 3,
+    "timestamp": "10/06/2022",
+    "name": "NESCAFE",
+    "description": "CAFE NESCAFE TRADICION DOY PACK",
+    "price": 289,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/large_460x460/2030519_l.jpg",
+    "code": "1860",
+    "stock": "200"
+  },
+  {
+    "id": 4,
+    "timestamp": "30/06/2022",
+    "name": "TOMAHAWK",
+    "description": "TOMAHAWK CABAÑA BELTRAN ENVASADO AL VACIO X KG",
+    "price": 1590,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3400737_f.jpg",
+    "code": "8596",
+    "stock": "75"
+  },
+  {
+    "id": 5,
+    "timestamp": "15/06/2022",
+    "name": "VACIO",
+    "description": "VACIO CABAÑA BELTRAN AL VACIO X KG.",
+    "price": 1490,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3400734_f.jpg",
+    "code": "8595",
+    "stock": "23"
+  },
+  {
+    "id": 6,
+    "timestamp": "23/07/2022",
+    "name": "MATAMBRE",
+    "description": "MATAMBRE CABAÑA BELTRAN AL VACIO X KG.",
+    "price": 1690,
+    "thumbnail": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3400735_f.jpg",
+    "code": "8593",
+    "stock": "21"
+  },
+]
